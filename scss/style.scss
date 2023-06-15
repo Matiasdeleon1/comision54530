@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+header h1{
+background-color: aqua;
+letter-spacing: 4px;
+font-family: 'Lobster', cursive;
+background-image: url(../imagnes/fondo.jpg);
+text-align: center;
+}
+header{
+background-color: aqua;
+background-image: url(../imagnes/fondo.jpg);
+margin-bottom: 29px;
+}
+
+html {
+font-size: 1rem;
+
+}
+
+main{
+text-align: center;
+}
+
+
+.contenedor{
+text-align: right;
+}
+
+
+
+main{
+background-color: linen;
+}
+
+
+
+
+.header-div{
+display: flex;
+
+}
+.nabvar{
+display: flex;
+list-style: none;
+gap: 20px;
+
+
+}
+
+.article {
+    display: flex;
+width: 25%;
+border: 2px solid black;
+box-shadow: 20px 3px 8px grey;
+margin: 12px;
+overflow: hidden;
+}
+
+.informacion{
+display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.nabvar li a{
+text-decoration: none;
+color: black;
+font-size: 24px;
+}
+
+.nabvar li a:hover{
+color: rgb(0, 38, 255);
+text-decoration: underline;
+}
+
+.nabvar li a:active{
+color: green;
+}
+
+@media (max-width:1024px){
+.informacion{
+justify-content: center;
+gap: 30px;
+flex-direction: column;
+width: 100%;
+display: flex;
+
+}
+.header-div{
+    align-items: center;
+    justify-content: center;
+
+}
+
+}
+
+
+@media (max-width:768px){
+.informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+}
+.header-div{
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+@media (max-width:425px){
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+}
+@import "./base/reset";
+@import "./utilities/funciones";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main-index";
+
